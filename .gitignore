@@ -1,0 +1,7 @@
+.ignore
+.ipynb_checkpoints
+__pycache__
+wh.egg-info
+predictions.csv
+data
+notebooks
