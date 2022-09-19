@@ -6,11 +6,17 @@ from wh.config import Config
 from wh.experiments.experiment import Experiment
 from wh.pipeline.preprocess import Preprocess
 
-from wh.experiments.tree_regressor import TreeRegressorExperiment
+# from wh.experiments.forest_regressor import RandomForestRegressorExperiment
+from wh.experiments.svm_regressor import SVMRegressorExperiment
+# from wh.experiments.xgb_regressor import XGBRegressorExperiment
+# from wh.experiments.tree_regressor import TreeRegressorExperiment
 
 def main():
     experiments = [
-        TreeRegressorExperiment,
+        # RandomForestRegressorExperiment,
+        SVMRegressorExperiment,
+        # TreeRegressorExperiment,
+        # XGBRegressorExperiment,
     ]
     
     prep = Preprocess(data='processed')
